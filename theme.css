@@ -1,40 +1,41 @@
-
 body{
     margin: 0 auto;
-    font-family: Georgia, Palatino, serif;
+    font-family: Garamond, Palatino, serif;
     color: #444444;
     line-height: .5;
-    max-width: 960px;
-    padding: 30px;
+    //max-width: 960px;
+    //padding: 30px;
 }
 h1, h2, h3, h4 {
-    color: #111111;
     font-weight: 800;
     text-shadow: 1px;
-    color:seagreen;
-
+    color:#32C66B;
 }
 h1, h2, h3, h4, h5, p {
     margin-bottom: 5px;
     padding: 0;
 }
 h1 {
-    font-size: 38px;
+    font-size: 28px;
+    color: #207f45;
 }
 h2 {
-    font-size: 26px;
+    font-size: 24px;
+    color: #2eb462;
     /* The bottom margin is small. It's designed to be used with gray meta text
      * below a post title. */
     margin: 24px 0 6px;
 }
 h3 {
-    font-size: 14px;
+    font-size: 20px;
+    color: #F46036;
 }
 h4 {
-    font-size: 11px;
+    font-size: 16px;
+    color:#C5D86D;
 }
 h5 {
-    font-size: 8px;
+    font-size: 14px;
 }
 a {
     color: #0099ff;
@@ -50,19 +51,27 @@ a:visited {
     color: purple;
 }
 
+b,strong{
+    font-weight:bold;
+    color:red;
+}
+
 li {
     line-height: 24px;
+    margin-bottom: .5em;
 }
 li ul, li ul {
     margin-left: 1px;
 }
 p, ul, ol {
-    font-size: 13px;
+    font-size: 19px;
     line-height: 24px;
-    max-width: 540px;
+    //max-width: 540px;
 }
 
 /* Multilevel list*/
+
+
 ol {
   list-style-type: decimal;
   counter-reset: item;
@@ -76,14 +85,12 @@ ul {
 }
 
 ol > li {
-  display: table;
   counter-increment: item;
-  margin-bottom: 0.6em;
+ 
 }
 
 ol > li:before {
-  content: counters(item, ".") ". ";
-  display: table-cell;
+ // content: counters(item, ".") ". ";
   padding-right: 0.6em;
 }
 
@@ -92,7 +99,7 @@ li ol > li {
 }
 
 li ol > li:before {
-  content: counters(item, ".") " ";
+  //content: counters(item, ".") " ";
 }
 
 /* End of multilevel list*/
@@ -103,8 +110,7 @@ pre {
 }
 code {
     font-family: Consolas, Monaco, Andale Mono, monospace;
-    line-height: .8;
-    font-size: 12px;
+    font-size: 13px;
 }
 aside {
     display: block;
@@ -294,4 +300,3 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-
